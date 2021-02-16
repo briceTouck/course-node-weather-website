@@ -26,14 +26,14 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res) => {
     res.render('index',{
         title: 'Weather App',
-        name: 'Edgar Grelet'
+        name: 'Brice Grelet'
     })
 })
 
 app.get('/about', (req, res) => {
     res.render('about',{
         title: 'About Page',
-        name: 'Edgar Grelet'
+        name: 'Brice Grelet'
     })
 })
 
@@ -41,7 +41,7 @@ app.get('/help', (req, res) => {
     res.render('help',{
         title: 'Help Page',
         help_text: 'Helpful text !',
-        name: 'Edgar Grelet'
+        name: 'Brice Grelet'
     })
 })
 
@@ -84,7 +84,7 @@ app.get('/help/*',(req, res) => {
     res.render('404',{
         title: 'Erreur 404',
         message: 'Help article not found',
-        name: 'Edgar Grelet'
+        name: 'Brice Grelet'
     })
 })
 
@@ -92,7 +92,7 @@ app.get('*',(req, res) => {
     res.render('404',{
         title: 'Erreur 404',
         message:'Page not found',
-        name: 'Edgar Grelet'
+        name: 'Brice Grelet'
     })
 })
 
