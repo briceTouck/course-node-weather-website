@@ -1,0 +1,62 @@
+body{
+    color: #333;
+    font-family: "Helvetica Neue" ;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content{
+    flex-grow: 1;
+}
+
+footer{
+    color: #888;
+    border-top: 1px solid #eee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+header{
+    margin: 16px 0 48px;
+}
+
+h1{
+    font-size: 64px;
+    margin-bottom: 64px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #888;
+    margin-right: 16px;
+}
+
+nav a:hover{
+    color: #333;
+}
+
+img.portrait{
+    max-width: 250px;
+}
+
+input{
+    border: 1px solid #eee;
+    padding: 16px;
+    min-width: 300px;
+}
+
+button{
+    cursor: pointer;
+    background: dodgerblue;
+    border: 1px solid dodgerblue;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50px;
+    min-width: 160px;
+}
