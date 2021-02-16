@@ -22,8 +22,8 @@ weatherForm.addEventListener('submit', (e) =>{
                 const location = data.location
                 const forecast = data.forcast
 
-                messageOne.textContent = 'Location: '+location
-                messageTwo.textContent = 'Forecast: '+forecast.resume
+                messageOne.textContent = 'À '+location
+                messageTwo.textContent = forecast.resume
 
 
             }

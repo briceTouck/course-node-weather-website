@@ -20,13 +20,15 @@ const forecast = (latitude, longitude, callback) => {
 
             const locationName = body.location.name
             const temperature = body.current.temperature
+            const windSpeed = body.current.wind_speed
             const precipitation = body.current.precip
             const description = body.current.weather_descriptions[0]
-            const resume = description+": À "+locationName+" Il fait "+temperature+"°C et la probabilité qu'il pleuve est de "+precipitation
+            const resume = "Il fait "+temperature+"°C, la précipitation est de "+precipitation+" et la vitesse du vent est de "+windSpeed+" mph."
 
             callback(undefined, {
                 locationName: locationName,
                 temperature: temperature,
+                windSpeed: windSpeed,
                 precipitation: precipitation,
                 description: description,
                 resume: resume
